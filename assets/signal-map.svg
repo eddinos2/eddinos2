@@ -1,65 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 720 220">
-  <title>eddinos2 cat and raven banner</title>
-  <desc>A dark, minimal banner with a cat and raven beside a concise security research tagline.</desc>
+  <title>eddinos2 profile banner</title>
+  <desc>A dark, minimal profile banner with a black cat, raven, moon, and security research tagline.</desc>
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b0f14"/>
-      <stop offset="0.54" stop-color="#11141d"/>
-      <stop offset="1" stop-color="#140f1d"/>
+      <stop offset="0.58" stop-color="#10151d"/>
+      <stop offset="1" stop-color="#15111b"/>
     </linearGradient>
-    <radialGradient id="moon" cx="44%" cy="36%" r="68%">
-      <stop offset="0" stop-color="#b996ff" stop-opacity="0.78"/>
-      <stop offset="0.42" stop-color="#6f43c9" stop-opacity="0.48"/>
-      <stop offset="1" stop-color="#2d194f" stop-opacity="0"/>
+    <radialGradient id="moon" cx="48%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#c2a5ff" stop-opacity="0.92"/>
+      <stop offset="0.42" stop-color="#7b4fd6" stop-opacity="0.62"/>
+      <stop offset="1" stop-color="#211436" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#7bb8bd" stop-opacity="0"/>
-      <stop offset="0.18" stop-color="#7bb8bd" stop-opacity="0.75"/>
-      <stop offset="0.58" stop-color="#d7a86e" stop-opacity="0.85"/>
+      <stop offset="0.24" stop-color="#7bb8bd" stop-opacity="0.9"/>
+      <stop offset="0.66" stop-color="#d7a86e" stop-opacity="0.9"/>
       <stop offset="1" stop-color="#d7a86e" stop-opacity="0"/>
     </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
     <style>
+      text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+        letter-spacing: 0;
+      }
       .panel { fill: url(#panel); stroke: #344050; stroke-width: 1.2; }
       .moon { fill: url(#moon); }
-      .ink { fill: #05070b; }
-      .edge { stroke: #2d3543; stroke-width: 1.2; }
+      .ink { fill: #03070b; }
+      .soft-ink { fill: #071015; }
+      .edge { stroke: #273241; stroke-width: 1.15; stroke-linejoin: round; }
       .eye { fill: #b996ff; }
-      .star { fill: #8061d9; opacity: 0.7; }
-      .rail { stroke: url(#rail); stroke-width: 1.4; stroke-linecap: round; stroke-dasharray: 1 11; }
-      .name {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-        font-size: 33px;
-        font-weight: 800;
-        letter-spacing: 0;
-        fill: #d8dee9;
-      }
-      .tag {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-        font-size: 16px;
-        font-weight: 600;
-        fill: #8f9aa8;
-        letter-spacing: 0;
-      }
-      .accent { fill: #d7a86e; }
+      .perch { stroke: #273241; stroke-width: 3; stroke-linecap: round; }
+      .signal { stroke: url(#signal); stroke-width: 1.4; stroke-linecap: round; stroke-dasharray: 1 12; }
+      .star { fill: #8265dc; opacity: 0.7; }
+      .name { fill: #d8dee9; font-size: 34px; font-weight: 800; }
+      .tag { fill: #929dac; font-size: 16px; font-weight: 600; }
+      .quiet { fill: #697484; font-size: 15px; font-weight: 600; }
       .cool { fill: #7bb8bd; }
-      .quiet { fill: #687484; }
+      .warm { fill: #d7a86e; }
       @media (prefers-reduced-motion: no-preference) {
-        .rail { animation: drift 9s linear infinite; }
+        .signal { animation: drift 10s linear infinite; }
         .eye { animation: blink 8s ease-in-out infinite; }
         .star-a { animation: star 6s ease-in-out infinite; }
-        .star-b { animation: star 7.5s ease-in-out infinite reverse; }
+        .star-b { animation: star 7.4s ease-in-out infinite reverse; }
       }
-      @keyframes drift { to { stroke-dashoffset: -120; } }
+      @keyframes drift { to { stroke-dashoffset: -130; } }
       @keyframes blink {
-        0%, 91%, 100% { opacity: 1; }
-        94% { opacity: 0.15; }
+        0%, 92%, 100% { opacity: 1; }
+        94% { opacity: 0.18; }
       }
       @keyframes star {
         0%, 100% { opacity: 0.35; }
@@ -69,32 +56,41 @@
   </defs>
 
   <rect class="panel" x="8" y="8" width="704" height="204" rx="8"/>
-  <circle class="moon" cx="126" cy="84" r="92"/>
-  <circle class="star star-a" cx="75" cy="42" r="2.2"/>
-  <circle class="star star-b" cx="176" cy="44" r="1.8"/>
-  <circle class="star" cx="196" cy="112" r="1.5"/>
-  <circle class="star star-a" cx="50" cy="126" r="1.4"/>
-  <path class="rail" d="M250 164 H640"/>
-
-  <g transform="translate(42 48)" filter="url(#glow)">
-    <path class="ink edge" d="M55 36 L75 14 L83 48 Q101 62 98 98 Q94 139 60 139 Q25 139 22 99 Q19 63 37 48 L45 14 Z"/>
-    <path class="ink" d="M23 101 C4 98 -7 80 10 69 C22 62 30 73 25 84 C21 94 32 99 44 99"/>
-    <ellipse class="ink" cx="62" cy="118" rx="30" ry="24"/>
-    <circle class="eye" cx="49" cy="65" r="3.6"/>
-    <circle class="eye" cx="75" cy="65" r="3.6"/>
-    <path class="ink edge" d="M130 53 C151 38 174 48 184 70 C191 86 184 106 164 112 C143 119 123 107 119 86 C116 70 120 61 130 53 Z"/>
-    <path class="ink edge" d="M120 64 L92 58 L121 50"/>
-    <path class="ink edge" d="M167 107 L183 139"/>
-    <path class="ink edge" d="M153 110 L147 139"/>
-    <path class="ink edge" d="M134 59 C122 36 134 20 154 25 C146 36 147 48 158 57"/>
-    <circle class="eye" cx="147" cy="66" r="3"/>
-  </g>
 
   <g>
-    <text class="name" x="252" y="52">eddinos2</text>
-    <text class="tag" x="254" y="88"><tspan class="cool">security research</tspan> / reverse engineering</text>
-    <text class="tag" x="254" y="115">systems tooling / careful proof</text>
-    <text class="tag accent" x="254" y="146">curiosity -&gt; evidence -&gt; tools</text>
-    <text class="tag quiet" x="254" y="184">Rust . Python . C . TS . RE . automation</text>
+    <circle class="moon" cx="112" cy="86" r="88"/>
+    <rect class="star star-a" x="52" y="47" width="4" height="4" rx="1"/>
+    <rect class="star star-b" x="165" y="42" width="3" height="3" rx="1"/>
+    <rect class="star" x="190" y="105" width="3" height="3" rx="1"/>
+    <rect class="star star-a" x="64" y="136" width="3" height="3" rx="1"/>
+  </g>
+
+  <g transform="translate(34 28)">
+    <path class="perch" d="M18 150 H184"/>
+
+    <path class="ink edge" d="M52 73 C50 55 58 44 69 36 L75 8 L91 35 L111 15 L116 48 C126 58 131 73 129 92 C125 130 103 151 79 148 C56 145 43 119 52 73 Z"/>
+    <path class="soft-ink" d="M48 116 C36 113 29 106 30 96 C31 87 39 82 47 86 C55 91 54 101 49 107 C46 111 46 114 48 116 Z"/>
+    <path class="ink" d="M73 138 C61 128 56 111 58 88 C60 68 69 55 82 49 C103 58 116 76 116 99 C116 124 100 142 82 145 Z" opacity="0.35"/>
+    <circle class="eye" cx="77" cy="74" r="3.6"/>
+    <circle class="eye" cx="104" cy="74" r="3.6"/>
+    <path class="edge" d="M87 86 L93 86" fill="none"/>
+
+    <path class="ink edge" d="M154 67 C167 50 194 54 209 78 C225 104 212 134 187 142 C162 150 140 128 141 103 C142 87 147 75 154 67 Z"/>
+    <path class="ink edge" d="M150 70 L111 61 L151 55 Z"/>
+    <path class="soft-ink" d="M164 82 C184 90 198 106 202 126 C187 121 170 105 158 85 Z"/>
+    <path class="ink edge" d="M202 108 L239 120 L205 136 Z"/>
+    <path class="edge" d="M184 139 L177 158" fill="none"/>
+    <path class="edge" d="M196 136 L209 158" fill="none"/>
+    <circle class="eye" cx="173" cy="73" r="2.7"/>
+  </g>
+
+  <path class="signal" d="M272 162 H652"/>
+
+  <g>
+    <text class="name" x="270" y="58">eddinos2</text>
+    <text class="tag" x="272" y="92"><tspan class="cool">security research</tspan> / reverse engineering</text>
+    <text class="tag" x="272" y="119">systems tooling / careful proof</text>
+    <text class="tag warm" x="272" y="151">evidence over noise.</text>
+    <text class="quiet" x="272" y="185">Rust . Python . C . TS . RE . automation</text>
   </g>
 </svg>
