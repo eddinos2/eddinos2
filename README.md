@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/signal-map.svg" alt="Minimal ASCII signal map: sample to parse to lift to reason to patch." width="720">
+  <img src="./assets/signal-map.svg" alt="Dark cat and raven banner for eddinos2: security research, reverse engineering, systems tooling." width="720">
 </p>
 
 # eddinos2
