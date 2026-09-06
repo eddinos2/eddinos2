@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 720 230">
+  <title>eddinos2 terminal signal map</title>
+  <desc>A minimal ASCII-style system map showing sample, parse, lift, reason, diff, evidence, and patch stages.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f14"/>
+      <stop offset="0.58" stop-color="#111821"/>
+      <stop offset="1" stop-color="#14120f"/>
+    </linearGradient>
+    <filter id="soft" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="0.2"/>
+    </filter>
+    <style>
+      .frame { fill: url(#bg); stroke: #36424f; stroke-width: 1.4; }
+      .scan { fill: #c08b46; opacity: 0.16; }
+      .muted { fill: #768391; }
+      .line { fill: #9aa6b2; }
+      .hot { fill: #d7a86e; }
+      .cold { fill: #7bb8bd; }
+      .dim { fill: #566170; }
+      text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 16px;
+        letter-spacing: 0;
+        dominant-baseline: hanging;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .scan {
+          animation: sweep 7s ease-in-out infinite;
+        }
+        .pulse-a {
+          animation: pulseA 5.5s ease-in-out infinite;
+        }
+        .pulse-b {
+          animation: pulseB 6.5s ease-in-out infinite;
+        }
+      }
+      @keyframes sweep {
+        0%, 100% { transform: translateX(-260px); opacity: 0; }
+        15% { opacity: 0.12; }
+        48% { opacity: 0.20; }
+        85% { opacity: 0.08; }
+      }
+      @keyframes pulseA {
+        0%, 100% { opacity: 0.72; }
+        45% { opacity: 1; }
+      }
+      @keyframes pulseB {
+        0%, 100% { opacity: 0.56; }
+        55% { opacity: 0.95; }
+      }
+    </style>
+  </defs>
+
+  <rect class="frame" x="8" y="8" width="704" height="214" rx="6"/>
+  <rect class="scan" x="205" y="27" width="130" height="178" rx="4"/>
+
+  <g filter="url(#soft)">
+    <text class="dim" x="28" y="26">+----------------------------------------------------------+</text>
+    <text class="line" x="28" y="49">| eddinos2 / security systems                              |</text>
+    <text class="dim" x="28" y="72">|                                                          |</text>
+    <text class="line" x="28" y="95">| [sample] -&gt; [parse] -&gt; [lift] -&gt; [reason] -&gt; [patch]     |</text>
+    <text class="muted pulse-a" x="28" y="118">|     |          \            \           /                |</text>
+    <text class="cold" x="28" y="141">| [image]      [cfg] ------ [diff] ---- [evidence]         |</text>
+    <text class="dim" x="28" y="164">|                                                          |</text>
+    <text class="hot pulse-b" x="28" y="187">| signal kept; noise discarded; assumptions labelled       |</text>
+    <text class="dim" x="28" y="210">+----------------------------------------------------------+</text>
+  </g>
+</svg>
