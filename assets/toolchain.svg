@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 720 240">
+  <title>eddinos2 working toolchain</title>
+  <desc>A compact set of technologies grouped as languages, security tooling, and systems infrastructure.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111821"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <style>
+      text {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+        letter-spacing: 0;
+      }
+      .panel { fill: url(#panel); stroke: #334151; stroke-width: 1.2; }
+      .axis { stroke: #2d3846; stroke-width: 1; }
+      .label { fill: #788594; font-size: 13px; font-weight: 600; }
+      .chip { fill: #141b23; stroke: #3b4857; stroke-width: 1; }
+      .chip2 { fill: #151a1f; stroke: #4a3f31; stroke-width: 1; }
+      .chip3 { fill: #111e20; stroke: #34585c; stroke-width: 1; }
+      .txt { fill: #d1d7de; font-size: 15px; font-weight: 600; }
+      .sub { fill: #8d99a6; font-size: 11px; }
+      .mark { fill: #d7a86e; font-size: 16px; font-weight: 800; }
+      .mark2 { fill: #7bb8bd; font-size: 16px; font-weight: 800; }
+      .mark3 { fill: #9aa6b2; font-size: 16px; font-weight: 800; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="8" y="8" width="704" height="224" rx="7"/>
+  <line class="axis" x1="36" y1="74" x2="684" y2="74"/>
+  <line class="axis" x1="36" y1="146" x2="684" y2="146"/>
+
+  <text class="label" x="34" y="38">LANGUAGES</text>
+  <g transform="translate(34 52)">
+    <rect class="chip" x="0" y="0" width="92" height="38" rx="6"/>
+    <text class="mark" x="14" y="24">Rs</text><text class="txt" x="42" y="24">Rust</text>
+    <rect class="chip" x="106" y="0" width="104" height="38" rx="6"/>
+    <text class="mark2" x="120" y="24">Py</text><text class="txt" x="150" y="24">Python</text>
+    <rect class="chip" x="224" y="0" width="56" height="38" rx="6"/>
+    <text class="mark3" x="244" y="24">C</text>
+    <rect class="chip" x="294" y="0" width="116" height="38" rx="6"/>
+    <text class="mark" x="308" y="24">ObjC</text><text class="txt" x="354" y="24">Obj-C</text>
+    <rect class="chip" x="424" y="0" width="130" height="38" rx="6"/>
+    <text class="mark2" x="438" y="24">TS</text><text class="txt" x="470" y="24">TypeScript</text>
+    <rect class="chip" x="568" y="0" width="72" height="38" rx="6"/>
+    <text class="mark3" x="582" y="24">SQL</text>
+  </g>
+
+  <text class="label" x="34" y="110">SECURITY / RE</text>
+  <g transform="translate(34 124)">
+    <rect class="chip2" x="0" y="0" width="112" height="38" rx="6"/>
+    <text class="mark" x="14" y="24">G</text><text class="txt" x="40" y="24">Ghidra</text>
+    <rect class="chip2" x="126" y="0" width="78" height="38" rx="6"/>
+    <text class="mark" x="140" y="24">IDA</text>
+    <rect class="chip2" x="218" y="0" width="94" height="38" rx="6"/>
+    <text class="mark2" x="232" y="24">IO</text><text class="txt" x="264" y="24">IOKit</text>
+    <rect class="chip2" x="326" y="0" width="114" height="38" rx="6"/>
+    <text class="mark2" x="340" y="24">IMG</text><text class="txt" x="380" y="24">ImageIO</text>
+    <rect class="chip2" x="454" y="0" width="64" height="38" rx="6"/>
+    <text class="mark3" x="472" y="24">V8</text>
+    <rect class="chip2" x="532" y="0" width="116" height="38" rx="6"/>
+    <text class="mark" x="546" y="24">CFG</text><text class="txt" x="586" y="24">SSA</text>
+  </g>
+
+  <text class="label" x="34" y="182">SYSTEMS / AUTOMATION</text>
+  <g transform="translate(34 196)">
+    <rect class="chip3" x="0" y="0" width="86" height="30" rx="6"/>
+    <text class="txt" x="16" y="20">MCP</text>
+    <rect class="chip3" x="100" y="0" width="112" height="30" rx="6"/>
+    <text class="txt" x="116" y="20">LangGraph</text>
+    <rect class="chip3" x="226" y="0" width="104" height="30" rx="6"/>
+    <text class="txt" x="242" y="20">Supabase</text>
+    <rect class="chip3" x="344" y="0" width="102" height="30" rx="6"/>
+    <text class="txt" x="360" y="20">Postgres</text>
+    <rect class="chip3" x="460" y="0" width="92" height="30" rx="6"/>
+    <text class="txt" x="476" y="20">Next.js</text>
+    <rect class="chip3" x="566" y="0" width="66" height="30" rx="6"/>
+    <text class="txt" x="582" y="20">Vite</text>
+  </g>
+</svg>

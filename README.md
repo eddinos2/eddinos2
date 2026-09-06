@@ -4,15 +4,16 @@
 
 # eddinos2
 
-I build security tools and publish small, evidence-heavy research repos.
+Security research, reverse engineering, systems tooling.
 
-Most of my public work sits around reverse engineering, vulnerability root cause analysis,
-exploitability boundaries, and the tooling that makes that work repeatable. The nearby
-edge cases are systems automation, full-stack prototypes, and AI-assisted workflows where
-the model is a component, not the product.
+The strongest thread through these repos is vulnerability root cause analysis:
+patches, parsers, drivers, exploitability boundaries, and the tooling needed to
+make that work repeatable. Past the security core, I build systems automation,
+full-stack prototypes, and AI-assisted workflows where the model is a component,
+not the product.
 
-I care about proof tiers more than theatrics: crash, reachability, primitive, RCE, and
-unknowns should stay separate.
+I would rather publish a careful boundary than a dramatic claim. Crash,
+reachability, primitive, RCE, and unknowns should stay separate.
 
 ## Main Thread
 
@@ -20,6 +21,12 @@ unknowns should stay separate.
 - Patch-diff root cause analysis: CVE intake, advisory correlation, before/after binary comparison, report generation.
 - Apple and browser attack surfaces: ImageIO, IOKit user clients, filesystem parsers, V8 optimization bugs.
 - Automation with audit trails: MCP, LangGraph, Ghidra/IDA backends, reproducible fixtures, explicit confidence tiers.
+
+## Working Set
+
+<p align="center">
+  <img src="./assets/toolchain.svg" alt="Compact toolchain: Rust, Python, C, Objective-C, TypeScript, SQL, Ghidra, IDA, IOKit, ImageIO, V8, MCP, LangGraph, Supabase, Postgres, Next.js, Vite." width="720">
+</p>
 
 ## Selected Work
 
